@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for file in files%}
+    <a href=/files?repo_name={{repo_name}}&file_name={{file}}> {{file}}</a><br>
+    {% endfor %}
+{% endblock content %}

@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action = "/uploader" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "hidden" name = "repo_name" value={{repo_name}} >   
+         <input type = "submit"/>
+      </form>
+{% endblock content %}
